@@ -1,0 +1,61 @@
+/* Solid background color */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #3b7bb3, #538cc6, #7aa9d6);
+ /* Updated solid background */
+}
+
+/* Larger, glowing grey frame */
+.container {
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    color: #ffffff;
+    width: 380px;
+    backdrop-filter: blur(12px);
+    box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.35),
+        0 0 18px rgba(255, 255, 255, 0.25),
+        inset 0 0 8px rgba(255, 255, 255, 0.25),
+        inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Assignments List */
+.assignments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Assignment Buttons */
+.assignment-item a {
+    text-decoration: none;
+    color: white; /* Changed from blue to white */
+    font-weight: 500;
+    display: block;
+    padding: 14px;
+    background: linear-gradient(to right, #3366cc, #003399);
+    border-radius: 30px 15px 30px 15px; /* Wavy shape */
+    transition: background 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+/* Hover Effect */
+.assignment-item a:hover {
+    background: linear-gradient(to right, #5c85d6, #3355aa);
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.35);
+}
